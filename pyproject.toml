@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "attractor"
+version = "0.1.0"
+description = "Declarative pipeline orchestrator for AI workflows implementing the Attractor spec."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydot>=1.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "uv>=0.10.4,<1",
+    "pytest>=7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/strongdm/attractor"
+
+[project.scripts]
+attractor = "attractor.cli:main"

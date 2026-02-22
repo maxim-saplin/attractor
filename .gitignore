@@ -1,0 +1,13 @@
+# Byte-compiled / C extensions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+
+# Build metadata
+attractor.egg-info/
+
+# Editor directories
+.vscode/
